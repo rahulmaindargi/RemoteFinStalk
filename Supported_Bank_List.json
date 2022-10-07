@@ -2,15 +2,15 @@
   "bankList": [
     {
       "bankName": "ICICI Bank",
-      "formatsLink": "https://raw.githubusercontent.com/rahulmaindargi/FinStalk/master/fin_stalk/remote/resources/sms_formats/ICICI_Transaction_SMS_Formats.json"
+      "formatsLink": "https://raw.githubusercontent.com/rahulmaindargi/RemoteFinStalk/main/ICICI_Transaction_SMS_Formats.json"
     },
     {
       "bankName": "CITI Bank",
-      "formatsLink": "https://raw.githubusercontent.com/rahulmaindargi/FinStalk/master/fin_stalk/remote/resources/sms_formats/CITIBANK_Transaction_SMS_Formats.json"
+      "formatsLink": "https://raw.githubusercontent.com/rahulmaindargi/RemoteFinStalk/main/CITIBANK_Transaction_SMS_Formats.json"
     },
     {
       "bankName": "JIO Bank",
-      "formatsLink": "https://raw.githubusercontent.com/rahulmaindargi/FinStalk/master/fin_stalk/remote/resources/sms_formats/JIOBANK_Transaction_SMS_Formats.json"
+      "formatsLink": "https://raw.githubusercontent.com/rahulmaindargi/RemoteFinStalk/main/JIOBANK_Transaction_SMS_Formats.json"
     }
   ]
 }
