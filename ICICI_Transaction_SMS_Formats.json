@@ -29,6 +29,11 @@
       "sender": "ICICIB",
       "type": "credit",
       "regex_Format": "(?i)ICICI Bank Account [[account]] is credited with Rs [[amount]] on [[date]] by Account linked to mobile number [[to]]. IMPS Ref.*"
+    },
+    {
+      "sender": "ICICIB",
+      "type": "debit",
+      "regex_Format": "(?i)ICICI Bank Acct [[account]] debited (?:for|with) (?:Rs|INR) [[amount]] on [[date]](;|\\.| &) [[to]].Avb Bal.*"
     }
   ]
 }
