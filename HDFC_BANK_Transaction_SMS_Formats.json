@@ -1,0 +1,9 @@
+{
+  "smsFormat": [
+    {
+      "sender": "HDFCBK",
+      "type": "debit",
+      "regex_Format": "(?i).*INR [[amount]] debited from HDFC Bank [[account]] on [[date]]. Info: UPI-[^-]*-[[to]]-.*"
+    }
+  ]
+}

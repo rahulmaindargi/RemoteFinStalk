@@ -11,6 +11,14 @@
     {
       "bankName": "JIO Bank",
       "formatsLink": "https://raw.githubusercontent.com/rahulmaindargi/RemoteFinStalk/main/JIOBANK_Transaction_SMS_Formats.json"
+    },
+    {
+      "bankName": "AXIS Bank",
+      "formatsLink": "https://raw.githubusercontent.com/rahulmaindargi/RemoteFinStalk/main/AXIS_BANK_Transaction_SMS_Formats.json"
+    },
+    {
+      "bankName": "HDFC Bank",
+      "formatsLink": "https://raw.githubusercontent.com/rahulmaindargi/RemoteFinStalk/main/HDFC_BANK_Transaction_SMS_Formats.json"
     }
   ]
 }

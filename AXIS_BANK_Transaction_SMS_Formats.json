@@ -1,0 +1,14 @@
+{
+  "smsFormat": [
+    {
+      "sender": "AXISBK",
+      "type": "credit",
+      "regex_Format": "(?i)INR [[amount]] credited to A\/c no. [[account]] on [[date]] at [[time]] IST. Info-.*"
+    },
+    {
+      "sender": "AXISBK",
+      "type": "debit",
+      "regex_Format": "(?i)Debit\nINR [[amount]]\nA\/c no. [[account]]\n[[date]] [[time]].*"
+    }
+  ]
+}
