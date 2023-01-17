@@ -3,7 +3,22 @@
     {
       "sender": "HDFCBK",
       "type": "debit",
-      "regex_Format": "(?i).*INR [[amount]] debited from HDFC Bank [[account]] on [[date]]. Info: UPI-[^-]*-[[to]]-.*"
+      "regex_Format": "(?i).*INR.? [[amount]] debited from HDFC Bank [[account]] on [[date]]. Info: UPI-[^-]*-[[to]]-.*"
+    },
+    {
+      "sender": "HDFCBK",
+      "type": "debit",
+      "regex_Format": "(?i).*Rs.? [[amount]] debited from a\/c [[account]] on [[date]] to VPA [[to]]\\(UPI Ref.*"
+    },
+    {
+      "sender": "HDFCBK",
+      "type": "credit",
+      "regex_Format": "(?i).*Rs.? [[amount]] credited to a\/c [[account]] on [[date]] by a\/c linked to VPA [[to]] \\(UPI Ref.*"
+    },
+    {
+      "sender": "HDFCBK",
+      "type": "credit",
+      "regex_Format": "(?i).*INR.? [[amount]] deposited in HDFC Bank A\/c [[account]] on [[date]] for [^-]*-[^-]*-[[to]]-.*"
     }
   ]
 }
