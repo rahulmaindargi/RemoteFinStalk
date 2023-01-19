@@ -1,0 +1,9 @@
+{
+  "smsFormat": [
+    {
+      "sender": "SBI",
+      "type": "debit",
+      "regex_Format": "(?i).*Your A\/C [[account]] has a debit by transfer of Rs.? [[amount]] on [[date]]. Avl Bal.*"
+    }
+  ]
+}

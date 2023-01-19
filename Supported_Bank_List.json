@@ -19,6 +19,14 @@
     {
       "bankName": "HDFC Bank",
       "formatsLink": "https://raw.githubusercontent.com/rahulmaindargi/RemoteFinStalk/main/HDFC_BANK_Transaction_SMS_Formats.json"
+    },
+    {
+      "bankName": "Saraswat Bank",
+      "formatsLink": "https://raw.githubusercontent.com/rahulmaindargi/RemoteFinStalk/main/SARASWAT_BANK_Transaction_SMS_Formats.json"
+    },
+    {
+      "bankName": "SBI Bank",
+      "formatsLink": "https://raw.githubusercontent.com/rahulmaindargi/RemoteFinStalk/main/SBI_BANK_Transaction_SMS_Formats.json"
     }
   ]
 }

@@ -1,14 +1,19 @@
 {
   "smsFormat": [
     {
-      "sender": "JIOPBL",
+      "sender": "JIO",
       "type": "debit",
       "regex_Format": "(?i)UPI\/DR\/(?:[0-9])*\/(?:[0-9]|[a-z])*\/[[to]]\/(?:[0-9]|[a-z]| )*is successful! Your A\/c has been debited by Rs. [[amount]] on [[date]]. Your.*"
     },
     {
-      "sender": "JIOPBL",
+      "sender": "JIO",
       "type": "credit",
       "regex_Format": "(?i)UPI\/CR\/(?:[0-9])*\/(?:[0-9]|[a-z])*\/[[to]]\/(?:[0-9]|[a-z]| )*is successful! Your A\/c has been credited by Rs. [[amount]] on [[date]]. Your.*"
+    },
+    {
+      "sender": "JIO",
+      "type": "debit",
+      "regex_Format": "(?i).* A/c [[account]] debited with Rs.[[amount]] on [[date]]. Info: [^/]*/[^/]*/[^/]*/[^/]*/[[to]]/.*. .*"
     }
   ]
 }

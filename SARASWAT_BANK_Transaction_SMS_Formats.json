@@ -1,0 +1,9 @@
+{
+  "smsFormat": [
+    {
+      "sender": "SARBNK",
+      "type": "debit",
+      "regex_Format": "(?i)Your a\/c no. [[account]] is debited for Rs.[[amount]] on [[date]] [[time]] and credited to VPA [[to]] \\(UPI Ref.*"
+    }
+  ]
+}
