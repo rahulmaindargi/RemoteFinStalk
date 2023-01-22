@@ -1,0 +1,19 @@
+{
+  "smsFormat": [
+    {
+      "sender": "BOI",
+      "type": "debit",
+      "regex_Format": "(?i).*BOI UPI .* Bank of India a\/c [[account]] debited Rs.[[amount]] and credited to [[to]] -Ref.*"
+    },
+    {
+      "sender": "BOI",
+      "type": "credit",
+      "regex_Format": "(?i).*BOI Rs.[ ]*[[amount]] Credited to your Ac [[account]] on [[date]] by UPI.*"
+    },
+    {
+      "sender": "BOI",
+      "type": "credit",
+      "regex_Format": "(?i).*BOI-You have received Rs.[[amount]] from [[to]] to your A/C [[account]] on [[date]] by IMPS.*"
+    }
+  ]
+}

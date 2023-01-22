@@ -1,0 +1,19 @@
+{
+  "smsFormat": [
+    {
+      "sender": "IOB",
+      "type": "debit",
+      "regex_Format": "(?i).*Rs.[[amount]] Debited to sb-[[account]] .* \\[UPI/.*\\] [[to]] on [[date]] [[time]].IOB.*"
+    },
+    {
+      "sender": "IOB",
+      "type": "credit",
+      "regex_Format": "(?i).*Rs.[[amount]] Credited to sb-[[account]] .* \\[UPI/.*\\] [[to]] on [[date]] [[time]].IOB.*"
+    },
+    {
+      "sender": "IOB",
+      "type": "debit",
+      "regex_Format": "(?i).*Your a\/c [[account]] debited for payee [[to]] for Rs.[ ]*[[amount]] on [[date]], ref.*"
+    }
+  ]
+}

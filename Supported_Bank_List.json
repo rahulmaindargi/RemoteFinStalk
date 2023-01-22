@@ -27,6 +27,18 @@
     {
       "bankName": "SBI Bank",
       "formatsLink": "https://raw.githubusercontent.com/rahulmaindargi/RemoteFinStalk/main/SBI_BANK_Transaction_SMS_Formats.json"
+    },
+    {
+      "bankName": "IOB Bank",
+      "formatsLink": "https://raw.githubusercontent.com/rahulmaindargi/RemoteFinStalk/main/IOB_BANK_Transaction_SMS_Formats.json"
+    },
+    {
+      "bankName": "RBL Bank",
+      "formatsLink": "https://raw.githubusercontent.com/rahulmaindargi/RemoteFinStalk/main/RBL_BANK_Transaction_SMS_Formats.json"
+    },
+    {
+      "bankName": "BOI Bank",
+      "formatsLink": "https://raw.githubusercontent.com/rahulmaindargi/RemoteFinStalk/main/BOI_BANK_Transaction_SMS_Formats.json"
     }
   ]
 }

@@ -1,0 +1,9 @@
+{
+  "smsFormat": [
+    {
+      "sender": "RBL",
+      "type": "debit",
+      "regex_Format": "(?i).*spent INR[[amount]] at [[to]] on Edition Classic Card \\([[account]]\\) on [[date]]. Avl.*"
+    }
+  ]
+}
