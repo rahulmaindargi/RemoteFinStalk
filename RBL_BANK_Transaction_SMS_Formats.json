@@ -4,6 +4,11 @@
       "sender": "RBL",
       "type": "debit",
       "regex_Format": "(?i).*spent INR[[amount]] at [[to]] on Edition Classic Card \\([[account]]\\) on [[date]]. Avl.*"
+    },
+    {
+      "sender": "RBL",
+      "type": "credit",
+      "regex_Format": "(?i).*Rs.[[amount]] received on RBL Bank Credit Card [[account]] on [[date]],.*"
     }
   ]
 }
