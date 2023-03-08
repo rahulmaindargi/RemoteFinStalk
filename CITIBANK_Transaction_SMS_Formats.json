@@ -36,6 +36,11 @@
       "regex_Format": "(?i)Payment of Rs.[[amount]] received for card [[account]] on [[date]]..*"
     },
     {
+      "sender": "CITIBA",
+      "type": "debit",
+      "regex_Format": "(?i)We confirm [[to]] debit on your Citi account no. [[account]] on [[date]] for an amount of Rs. [[amount]].*"
+    },
+    {
       "sender": "CITIBN",
       "type": "debit",
       "regex_Format": "(?i)Your Citi A\/c [[account]] is debited for Rs.[[amount]] on [[date]] [[time]] for fund transfer request to [[to]] \\(Ref. No.*"
