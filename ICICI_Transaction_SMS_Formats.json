@@ -18,7 +18,7 @@
     {
       "sender": "ICICIB",
       "type": "credit",
-      "regex_Format": "(?i)Dear Customer, Payment of (?:Rs|INR) [[amount]] has been received towards your ICICI Bank Credit Card [[account]] on [[date]] through UPI..*"
+      "regex_Format": "(?i).*Payment of (?:Rs|INR) [[amount]] has been received (?:towards|on) your ICICI Bank Credit Card (account )?[[account]] on [[date]]( through UPI)?..*"
     },
     {
       "sender": "ICICIB",
