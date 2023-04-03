@@ -42,6 +42,11 @@
     },
     {
       "sender": "CITIBA",
+      "type": "credit",
+      "regex_Format": "(?i)Credit of Rs.[[amount]] received from [[to]] has been processed on your Credit Card [[account]] on [[date]].*"
+    },
+    {
+      "sender": "CITIBA",
       "type": "debit",
       "regex_Format": "(?i)We confirm [[to]] debit on your Citi account no. [[account]] on [[date]] for an amount of Rs. [[amount]].*"
     },
