@@ -23,7 +23,7 @@
     {
       "sender": "CITIBA",
       "type": "credit",
-      "regex_Format": "(?i).* no.[[account]] is credited by Rs.[[amount]] on [[date]] by a\/c [[to]] ( )+.*"
+      "regex_Format": "(?i).* no.[[account]] is credited by Rs.[[amount]] on [[date]] by a\/c [[to]] ( )*\\(.*"
     },
     {
       "sender": "CITIBA",
