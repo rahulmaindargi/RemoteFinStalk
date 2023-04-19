@@ -49,6 +49,11 @@
       "sender": "ICICIB",
       "type": "credit",
       "regex_Format": "(?i)Acct [[account]] is credited (?:for|with) (?:Rs|INR) [[amount]] on [[date]] from [[to]]. UPI.*"
+    },
+    {
+      "sender": "ICICIB",
+      "type": "credit",
+      "regex_Format": "(?i)(?:Rs|INR) [[amount]] from [[to]] has been credited to your ICICI Bank Credit Card [[account]] on [[date]] .*"
     }
   ]
 }
