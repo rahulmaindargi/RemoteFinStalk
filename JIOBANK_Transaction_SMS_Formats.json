@@ -13,12 +13,17 @@
     {
       "sender": "JIO",
       "type": "debit",
-      "regex_Format": "(?i).* A/c [[account]] debited with Rs.[[amount]] on [[date]]. Info: [^/]*/[^/]*/[^/]*/[^/]*/[[to]]/.*. .*"
+      "regex_Format": "(?i).* A\/c [[account]] debited with Rs.[[amount]] on [[date]]. Info: [^/]*/[^/]*/[^/]*/[^/]*/[[to]]/.*. .*"
     },
     {
       "sender": "JIO",
       "type": "credit",
       "regex_Format": "(?i).*A\/c [[account]] credited with Rs.[[amount]] on [[date]]. Info: [^/]*/[^/]*/[^/]*/[^/]*/[[to]]/.*. Avl.*"
+    },
+    {
+      "sender": "JIO",
+      "type": "debit",
+      "regex_Format": "(?i).* A\/c [[account]] is debited with Rs. *[[amount]] on [[date]]. For more information .*"
     }
   ]
 }
