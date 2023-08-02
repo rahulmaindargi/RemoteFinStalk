@@ -24,6 +24,10 @@
       "sender": "JIO",
       "type": "debit",
       "regex_Format": "(?i).* A\/c [[account]] is debited with Rs. *[[amount]] on [[date]]. For more information .*"
+    },{
+      "sender": "JIO",
+      "type": "credit",
+      "regex_Format":"(?i).* A\/c [[account]] is credited with Rs. *[[amount]] on [[date]]. Your.*"
     }
   ]
 }
