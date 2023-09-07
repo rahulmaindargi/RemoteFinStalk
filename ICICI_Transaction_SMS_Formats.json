@@ -38,7 +38,7 @@
     {
       "sender": "ICICIB",
       "type": "debit",
-      "regex_Format": "(?i)ICICI Bank Acc [[account]] debited (?:for|with) (?:Rs|INR) [[amount]] on [[date]](;|\\.| &) Info:[[to]]\\.Avl Bal.*"
+      "regex_Format": "(?i)ICICI Bank Acc [[account]] debited (?:for|with )?(?:Rs|INR|RS\\.) [[amount]] on [[date]](;|\\.| &)? Info(:)?[[to]]\\.Avl Bal.*"
     },
     {
       "sender": "ICICIB",
