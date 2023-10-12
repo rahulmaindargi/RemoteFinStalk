@@ -1,57 +1,57 @@
 {
   "smsFormat": [
     {
-      "sender": "ICICIB",
+      "sender": "ICICI",
       "type": "debit",
       "regex_Format": "(?i)(?:Rs|INR) [[amount]] spent on ICICI Bank Card [[account]] on [[date]] at [[to]]. Avl Lmt.*"
     },
     {
-      "sender": "ICICIB",
+      "sender": "ICICI",
       "type": "debit",
       "regex_Format": "(?i)Dear Customer, ICICI Bank Account [[account]] is debited (?:for|with) (?:Rs|INR) [[amount]] on [[date]]. Info: [[to]]. The Available.*"
     },
     {
-      "sender": "ICICIB",
+      "sender": "ICICI",
       "type": "debit",
       "regex_Format": "(?i)ICICI Bank Acct [[account]] debited (?:for|with) (?:Rs|INR) [[amount]] on [[date]](;|\\.| &) [[to]] credited..*"
     },
     {
-      "sender": "ICICIB",
+      "sender": "ICICI",
       "type": "credit",
       "regex_Format": "(?i).*Payment of (?:Rs|INR) [[amount]] has been received (?:towards|on) your ICICI Bank Credit Card (account )?[[account]] on [[date]]( through UPI)?..*"
     },
     {
-      "sender": "ICICIB",
+      "sender": "ICICI",
       "type": "credit",
       "regex_Format": "(?i)Dear Customer, your ICICI Bank Account [[account]] has been credited (?:for|with) (?:Rs|INR) [[amount]] on [[date]]. Info:[[to]]. The Available.*"
     },
     {
-      "sender": "ICICIB",
+      "sender": "ICICI",
       "type": "credit",
       "regex_Format": "(?i)ICICI Bank Account [[account]] is credited (?:for|with) (?:Rs|INR) [[amount]] on [[date]] by Account linked to mobile number [[to]]. IMPS Ref.*"
     },
     {
-      "sender": "ICICIB",
+      "sender": "ICICI",
       "type": "debit",
       "regex_Format": "(?i)ICICI Bank Acc [[account]] debited (?:for|with) (?:Rs|INR) [[amount]] on [[date]](;|\\.| &) [[to]].Avb Bal.*"
     },
     {
-      "sender": "ICICIB",
+      "sender": "ICICI",
       "type": "debit",
       "regex_Format": "(?i)ICICI Bank Acc [[account]] debited (?:for|with )?(?:Rs|INR|RS\\.) [[amount]] on [[date]](;|\\.| &)? Info(:)?[[to]]\\.Avl Bal.*"
     },
     {
-      "sender": "ICICIB",
+      "sender": "ICICI",
       "type": "credit",
       "regex_Format": "(?i)credited your ICICI Bank Account [[account]] (?:for|with) (?:Rs|INR) [[amount]] on [[date]](;|\\.| &) Info:[[to]]\\. The Available Balance.*"
     },
     {
-      "sender": "ICICIB",
+      "sender": "ICICI",
       "type": "credit",
       "regex_Format": "(?i)Acct [[account]] is credited (?:for|with) (?:Rs|INR) [[amount]] on [[date]] from [[to]]. UPI.*"
     },
     {
-      "sender": "ICICIB",
+      "sender": "ICICI",
       "type": "credit",
       "regex_Format": "(?i)(?:Rs|INR) [[amount]] from [[to]] has been credited to your ICICI Bank Credit Card [[account]] on [[date]] .*"
     }
