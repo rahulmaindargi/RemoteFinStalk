@@ -54,6 +54,12 @@
       "sender": "ICICI",
       "type": "credit",
       "regex_Format": "(?i)(?:Rs|INR) [[amount]] from [[to]] has been credited to your ICICI Bank Credit Card [[account]] on [[date]] .*"
+    },
+    {
+      "sender": "ICICI",
+      "type": "credit",
+      "regex_Format": "(?i).*Account [[account]] (?:is )?credited( )?(?:for|with|:)?( )?(?:Rs|INR|Rs.)( )?[[amount]] on [[date]]\\. Info(:| )?[[to]]\\.( )?Available Balance.*"
     }
+    
   ]
 }
