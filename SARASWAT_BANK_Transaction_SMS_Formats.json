@@ -3,7 +3,17 @@
     {
       "sender": "SARBNK",
       "type": "debit",
-      "regex_Format": "(?i)Your a\/c no. [[account]] is debited for Rs.[[amount]] on [[date]] [[time]] and credited to VPA [[to]] \\(UPI Ref.*"
+      "regex_Format": "(?i).*Your (?:A\/c|account) no. (ending with )?[[account]] (?:is|has been) debited for (?:INR |Rs\\.)[[amount]] on [[date]] [[time]] and credited to (?:VPA|a\/c no.) [[to]] \\(UPI Ref.*"
+    },
+    {
+      "sender": "SARBNK",
+      "type": "debit",
+      "regex_Format": "(?i).*Your (?:A\/c|account) no. (ending with )?[[account]] (?:is|has been) debited for (?:INR |Rs\\.)[[amount]] on [[date]] [[time]] towards [[to]](?:\\.|- ?S).*"
+    },
+    {
+      "sender": "SARBNK",
+      "type": "credit",
+      "regex_Format": "(?i).*Your (?:A\/c|account) no. (ending with )?[[account]] (?:is|has been) credited with (?:INR |Rs\\.)[[amount]] on [[date]]( [[time]])? towards [[to]](?:\\.| ?- ?S).*"
     }
   ]
 }
