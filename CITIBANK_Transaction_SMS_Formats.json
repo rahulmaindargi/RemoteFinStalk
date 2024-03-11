@@ -38,7 +38,7 @@
     {
       "sender": "CITIBA",
       "type": "credit",
-      "regex_Format": "(?i)Payment of Rs.[[amount]] received for card [[account]] on [[date]]..*"
+      "regex_Format": "(?i)Payment of Rs. ?[[amount]] received for card( no| no.)? [[account]] on [[date]]..*"
     },
     {
       "sender": "CITIBA",
@@ -56,4 +56,4 @@
       "regex_Format": "(?i)Your Citi A\/c [[account]] is debited for Rs.[[amount]] on [[date]] [[time]] for fund transfer request to [[to]] \\(Ref. No.*"
     }
   ]
-}
+  }
