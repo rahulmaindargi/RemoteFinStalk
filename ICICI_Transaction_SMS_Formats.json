@@ -43,7 +43,7 @@
     {
       "sender": "ICICI",
       "type": "debit",
-      "regex_Format": "(?i).* Credit Card [[account]] debited (?:for |with )?(?:Rs|INR|RS\\.) [[amount]] on [[date]](;|\\.| &|,)? for(:)? ?[[to]]\\. To.*"
+      "regex_Format": "(?i).* Credit Card [[account]] debited (?:for |with )?(?:Rs|INR|RS\\.) [[amount]] on [[date]](;|\\.| &|,)? for(:)? ?(UPI-[^-]*-)?[[to]]\\. To.*"
     },
     {
       "sender": "ICICI",
