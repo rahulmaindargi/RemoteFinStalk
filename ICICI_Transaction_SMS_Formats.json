@@ -63,7 +63,7 @@
     {
       "sender": "ICICI",
       "type": "credit",
-      "regex_Format": "(?i).*(?:Acc|Acct|Account) [[account]] (?:is )?credited( )?(?:for|with|:)?( )?(?:Rs|INR|Rs\\.)( )?[[amount]] on [[date]]\\. Info(:| )?[[to]](:(.)*)?(\\.)?( )?.*"
+      "regex_Format": "(?i).*(?:Acc|Acct|Account) [[account]] (?:is )?credited( )?(?:for|with|:)?( )?(?:Rs|INR|Rs\\.)( )?[[amount]] on [[date]]\\. Info(:| )?[[to]](:(.)*)?(\\.)?( )?(Available Balance.*|\\.)"
     }
   ]
 }
