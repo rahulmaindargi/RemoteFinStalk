@@ -3,7 +3,7 @@
     {
       "sender": "ICICI",
       "type": "debit",
-      "regex_Format": "(?i)(?:Rs|INR|RS\\.) [[amount]] spent on ICICI Bank Card [[account]] on [[date]] at [[to]]. Avl Lmt.*"
+      "regex_Format": "(?i)(?:Rs|INR|RS\\.) [[amount]] spent (on|using) ICICI Bank Card [[account]] on [[date]] (at|on) [[to]]. Avl (Lmt|Limit).*"
     },
     {
       "sender": "ICICI",
@@ -63,7 +63,7 @@
     {
       "sender": "ICICI",
       "type": "credit",
-      "regex_Format": "(?i).*Account [[account]] (?:is )?credited( )?(?:for|with|:)?( )?(?:Rs|INR|Rs\\.)( )?[[amount]] on [[date]]\\. Info(:| )?[[to]](:(.)*)?(\\.)?( )?Available Balance.*"
-    } 
+      "regex_Format": "(?i).*(?:Acc|Acct|Account) [[account]] (?:is )?credited( )?(?:for|with|:)?( )?(?:Rs|INR|Rs\\.)( )?[[amount]] on [[date]]\\. Info(:| )?[[to]](:(.)*)?(\\.)?( )?.*"
+    }
   ]
 }
