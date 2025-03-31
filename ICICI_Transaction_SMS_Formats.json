@@ -8,6 +8,11 @@
     {
       "sender": "ICICI",
       "type": "debit",
+      "regex_Format": "(?i)(?:Rs|INR|RS\\.) [[amount]] debited from ICICI Bank Acc [[account]] on [[date]] [[to]]. Bal.*"
+    },
+    {
+      "sender": "ICICI",
+      "type": "debit",
       "regex_Format": "(?i).* Account [[account]] (is |has been )?debited (?:for |with )?(?:Rs|INR|RS\\.) [[amount]] on [[date]]. (Info:|towards) [[to]]. (UPI Ref|The Avail).*"
     },
     {
