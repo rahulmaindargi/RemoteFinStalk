@@ -19,6 +19,11 @@
       "sender": "HDFCBK",
       "type": "credit",
       "regex_Format": "(?i).*INR.? [[amount]] deposited in HDFC Bank A\/c [[account]] on [[date]] for [^-]*-[^-]*-[[to]]-.*"
+    },
+    {
+      "sender": "HDFCBK",
+      "type": "debit",
+      "regex_Format": "(?i).*Spent Rs.? ?[[amount]] On HDFC Bank Card [[account]] At [[to]] On [[date]]:[[time]]\\..*"
     }
   ]
 }
