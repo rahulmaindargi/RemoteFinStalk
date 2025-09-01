@@ -24,6 +24,11 @@
       "sender": "AXISBK",
       "type": "debit",
       "regex_Format": "(?i)Debit\n *INR [[amount]]\n *A/c: [[account]]\n *[[date]] [[time]][^n]*\n *[[to]].*"
+    },
+    {
+      "sender": "AXISBK",
+      "type": "debit",
+      "regex_Format": "(?i).*Spent (INR|Rs[.]?)[ ]*[[amount]][\n]*[ ]*(Axis Bank )?Card no.[ ]*[[account]][\n]*[ ]*[[date]] [[time]]( IST.? *)?[\n]*[ ]*[[to]][\n]*[ ]*Avl.*"
     }
   ]
 }
