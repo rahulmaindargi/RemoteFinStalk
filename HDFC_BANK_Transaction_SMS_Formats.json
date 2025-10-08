@@ -24,6 +24,11 @@
       "sender": "HDFCBK",
       "type": "debit",
       "regex_Format": "(?i).*Spent Rs.? ?[[amount]] On HDFC Bank Card [[account]] At #? ?[[to]] On [[date]]:[[time]]\\..*"
+    },
+    {
+      "sender": "HDFCBK",
+      "type": "debit",
+      "regex_Format": "(?i).*Txn ?(?:Rs|INR)?\\.? ?[[amount]]\n? *On HDFC Bank Card [[account]]\n? *At #? ?[[to]]\n? *by UPI .*\n? *On [[date]].*"
     }
   ]
 }
