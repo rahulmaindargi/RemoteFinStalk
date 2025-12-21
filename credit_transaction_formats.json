@@ -1,0 +1,108 @@
+{
+  "smsFormat": [
+    {
+      "type": "credit",
+      "regex_Format": "(?i)INR [[amount]] credited to A/c no. [[account]] on [[date]] at [[time]] IST. Info-.*"
+    },
+    {
+      "type": "credit",
+      "regex_Format": "(?i)INR [[amount]] has been received (towards your|to) (.* Credit Card|A/c no.) [[account]] on [[date]] (at [[time]])?( IST. )?(Info)?-.*"
+    },
+    {
+      "type": "credit",
+      "regex_Format": "(?i).* Rs.[ ]*[[amount]] Credited to your Ac [[account]] on [[date]] by UPI.*"
+    },
+    {
+      "type": "credit",
+      "regex_Format": "(?i).*You have received Rs.[[amount]] from [[to]] to your A/C [[account]] on [[date]] by IMPS.*"
+    },
+    {
+      "type": "credit",
+      "regex_Format": "(?i)Your [[account]] A/c has been credited with INR [[amount]] on [[date]] at [[time]] received from [[to]]. UPI Ref.*"
+    },
+    {
+      "type": "credit",
+      "regex_Format": "(?i)Your .* account [[account]] has been credited with [[to]] of Rs. [[amount]] on [[date]]. .*"
+    },
+    {
+      "type": "credit",
+      "regex_Format": "(?i).* no.[[account]] is credited by Rs.[[amount]] on [[date]] by a/c [[to]] ( )*\\(.*"
+    },
+    {
+      "type": "credit",
+      "regex_Format": "(?i)Rs.[[amount]] is credited to your a/c [[account]] from .* Account of [[to]] on [[date]] [[time]] \\(Ref no..*"
+    },
+    {
+      "type": "credit",
+      "regex_Format": "(?i)Payment of Rs. ?[[amount]] received for card( no| no.)? [[account]] on [[date]]..*"
+    },
+    {
+      "type": "credit",
+      "regex_Format": "(?i)Credit of Rs.[[amount]] received from [[to]] has been processed on your Credit Card [[account]] on [[date]].*"
+    },
+    {
+      "type": "credit",
+      "regex_Format": "(?i).*Rs.? [[amount]] credited to a/c [[account]] on [[date]] by a/c linked to VPA [[to]] \\(UPI Ref.*"
+    },
+    {
+      "type": "credit",
+      "regex_Format": "(?i).*INR.? [[amount]] deposited in .* A/c [[account]] on [[date]] for [^-]*-[^-]*-[[to]]-.*"
+    },
+    {
+      "type": "credit",
+      "regex_Format": "(?i).*Payment of (?:Rs|INR|RS\\.) [[amount]] has been received (?:towards|on) your .* Credit Card (account )?[[account]] on [[date]]( through UPI)?..*"
+    },
+    {
+      "type": "credit",
+      "regex_Format": "(?i).*Payment of (?:Rs|INR|RS\\.) [[amount]] has been received (?:towards|on) your .* Credit Card (account )?[[account]] through [[to]] on [[date]].*"
+    },
+    {
+      "type": "credit",
+      "regex_Format": "(?i)Dear Customer, your .* Account [[account]] has been credited (?:for |with )?(?:Rs|INR|RS\\.) [[amount]] on [[date]]. Info:[[to]]. The Available.*"
+    },
+    {
+      "type": "credit",
+      "regex_Format": "(?i).* Account [[account]] is credited (?:for |with )?(?:Rs|INR|RS\\.) [[amount]] on [[date]] by Account linked to mobile number [[to]]. IMPS Ref.*"
+    },
+    {
+      "type": "credit",
+      "regex_Format": "(?i)credited your .* Account [[account]] (?:for |with )?(?:Rs|INR|RS\\.) [[amount]] on [[date]](;|\\.| &|,) Info:[[to]]\\. The Available Balance.*"
+    },
+    {
+      "type": "credit",
+      "regex_Format": "(?i)Acct [[account]] is credited (?:for |with )?(?:Rs|INR|RS\\.) [[amount]] on [[date]] from [[to]]. UPI.*"
+    },
+    {
+      "type": "credit",
+      "regex_Format": "(?i)(?:Rs|INR|RS\\.) [[amount]] from [[to]] has been credited to your .* Credit Card [[account]] on [[date]] .*"
+    },
+    {
+      "type": "credit",
+      "regex_Format": "(?i).*(?:Acc|Acct|Account) [[account]] (?:is )?credited( )?(?:for|with|:)?( )?(?:Rs|INR|Rs\\.)( )?[[amount]] on [[date]]\\. Info(:| )?[[to]](:(.)*)?(\\.)?( )?(Available Balance.*|\\.)"
+    },
+    {
+      "type": "credit",
+      "regex_Format": "(?i).*Rs.[[amount]] Credited to sb-[[account]] .* \\[UPI/.*\\] [[to]] on [[date]] [[time]].IOB.*"
+    },
+    {
+      "type": "credit",
+      "regex_Format": "(?i)UPI/CR/(?:[0-9])*/(?:[0-9]|[a-z])*/[[to]]/(?:[0-9]|[a-z]| )*is successful! Your A/c has been credited by Rs. [[amount]] on [[date]]. Your.*"
+    },
+    {
+      "type": "credit",
+      "regex_Format": "(?i).*A/c [[account]] credited with Rs.[[amount]] on [[date]]. Info: [^/]*/[^/]*/[^/]*/[^/]*/[[to]]/.*. Avl.*"
+    },
+    {
+      "type": "credit",
+      "regex_Format": "(?i).* A/c [[account]] is credited with Rs. *[[amount]] on [[date]]. Your.*"
+    },
+    {
+      "type": "credit",
+      "regex_Format": "(?i).*Rs.[[amount]] received on .* Credit Card [[account]] on [[date]],.*"
+    },
+    {
+      "type": "credit",
+      "regex_Format": "(?i).*Your (?:A/c|account) no. (ending with )?[[account]] (?:is|has been) credited with (?:INR |Rs\\.)[[amount]] on [[date]]( [[time]])? towards [[to]](?:\\.| ?- ?S).*"
+    }
+  ]
+}

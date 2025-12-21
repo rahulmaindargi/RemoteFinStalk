@@ -1,0 +1,124 @@
+{
+  "smsFormat": [
+    {
+      "type": "debit",
+      "regex_Format": "(?i)Debit\n *INR [[amount]]\n *A/c no. [[account]]\n *[[date]] [[time]].*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i)Spent[\n]*[ ]*Card no.[ ]*[[account]][\n]*[ ]*(INR|Rs[.]?)[ ]*[[amount]][\n]+[ ]*[[date]] [[time]][\n]*[ ]*[[to]][\n]*[ ]*Avl.*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i)Debit\n *INR [[amount]]\n *A/c: [[account]]\n *[[date]] [[time]][^n]*\n *[[to]].*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i).*Spent (INR|Rs[.]?)[ ]*[[amount]][\n]*[ ]*(.* )?Card no.[ ]*[[account]][\n]*[ ]*[[date]] [[time]]( IST.? *)?[\n]*[ ]*[[to]][\n]*[ ]*Avl.*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i).*BOI UPI .* .* a/c [[account]] debited Rs.[[amount]] and credited to [[to]] -Ref.*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i)Your [[account]] A/c has been debited with INR [[amount]] on [[date]] at [[time]] and account [[to]] has been credited..*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i)Your a/c no.[[account]] is debited for Rs.[[amount]] on [[date]] and a/c [[to]] credited.*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i)Rs. [[amount]] spent on card [[account]] on [[date]] at [[to]]. Limit.*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i)We confirm [[to]] debit on your .* no. [[account]] on [[date]] for an amount of Rs. [[amount]].*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i)Your .* A/c [[account]] is debited for Rs.[[amount]] on [[date]] [[time]] for fund transfer request to [[to]] \\(Ref. No.*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i).*INR.? [[amount]] debited from .* [[account]] on [[date]]. Info: UPI-[^-]*-[[to]]-.*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i).*Rs.? [[amount]] debited from a/c [[account]] on [[date]] to VPA [[to]]\\(UPI Ref.*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i).*Spent Rs.? ?[[amount]] On .* Card [[account]] At #? ?[[to]] On [[date]]:[[time]]\\..*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i).*Txn ?(?:Rs|INR)?\\.? ?[[amount]]\n? *On .* Card [[account]]\n? *At #? ?[[to]]\n? *by UPI .*\n? *On [[date]].*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i)(?:Rs|INR|RS\\.) [[amount]] spent (on|using) .* Card [[account]] on [[date]] (at|on) [[to]]. Avl (Lmt|Limit).*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i)(?:Rs|INR|RS\\.) [[amount]] debited from .* Acc [[account]] on [[date]] [[to]]. Bal.*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i).* Account [[account]] (is |has been )?debited (?:for |with )?(?:Rs|INR|RS\\.) [[amount]] on [[date]]. (Info:|towards) [[to]]. (UPI Ref|The Avail).*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i).* Acct [[account]] debited (?:for |with )?(?:Rs|INR|RS\\.) [[amount]] on [[date]](;|\\.| &|,) [[to]] credited..*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i).* Acc [[account]] debited (?:for |with )?(?:Rs|INR|RS\\.) [[amount]] on [[date]](;|\\.| &|,)? [[to]]\\.( )?Avb Bal.*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i).* Acc [[account]] debited (?:for |with )?(?:Rs|INR|RS\\.) [[amount]] on [[date]](;|\\.| &|,)? Info(:)?[[to]](:(.)*)?\\.Avl Bal.*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i).* Credit Card [[account]] debited (?:for |with )?(?:Rs|INR|RS\\.) [[amount]] on [[date]](;|\\.| &|,)? for(:)? ?(UPI-[^-]*-)?[[to]]\\. To.*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i).*Rs.[[amount]] Debited to sb-[[account]] .* \\[UPI/.*\\] [[to]] on [[date]] [[time]].IOB.*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i).*Your a/c [[account]] debited for payee [[to]] for Rs.[ ]*[[amount]] on [[date]], ref.*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i)UPI/DR/(?:[0-9])*/(?:[0-9]|[a-z])*/[[to]]/(?:[0-9]|[a-z]| )*is successful! Your A/c has been debited by Rs. [[amount]] on [[date]]. Your.*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i).* A/c [[account]] (is )?debited with Rs.( )?[[amount]] on [[date]]. Info: [^/]*/[^/]*/[^/]*/[^/]*/[[to]]/.*. .*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i).* A/c [[account]] is debited with Rs. *[[amount]] on [[date]]. For more information .*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i).*spent INR[[amount]] at [[to]] on Edition Classic Card \\([[account]]\\) on [[date]]. Avl.*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i).*Your (?:A/c|account) no. (ending with )?[[account]] (?:is|has been) debited for (?:INR |Rs\\.)[[amount]] on [[date]] [[time]] and credited to (?:VPA|a/c no.) [[to]] \\(UPI Ref.*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i).*Your (?:A/c|account) no. (ending with )?[[account]] (?:is|has been) debited for (?:INR |Rs\\.)[[amount]] on [[date]] [[time]] towards [[to]](?:\\.|- ?S).*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i).*Your A/C [[account]] has a debit by transfer of Rs.? [[amount]] on [[date]]. Avl Bal.*"
+    }
+  ]
+}
