@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Privacy Policy - FinStalk</title>
+    <style>
+        body { font-family: Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
+        h1 { border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        h2 { color: #2c3e50; margin-top: 30px; }
+        ul { margin-bottom: 20px; }
+        li { margin-bottom: 10px; }
+        .highlight { background-color: #f8f9fa; padding: 15px; border-left: 4px solid #007bff; border-radius: 4px; }
+    </style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p><strong>Last updated:</strong> December 29, 2025</p>
+
+<p>This Privacy Policy describes how <strong>FinStalk</strong> ("we", "our", or "the App") collects, uses, and protects your information. The App is developed by <strong>Rahul Vivek Maindargi</strong> as a standalone, offline-first tool for personal expense management.</p>
+
+<div class="highlight">
+    <p>We are committed to the principle that <strong>your financial data belongs to you</strong>. We do not own, sell, or view your personal data.</p>
+</div>
+
+<h2>1. SMS Permission & Data Usage</h2>
+<p>To function as an automated expense tracker, the App requests the <code>READ_SMS</code> permission.</p>
+<ul>
+    <li><strong>Why we need it:</strong> In India, financial transaction alerts are primarily delivered via SMS. The App uses this permission to automatically parse incoming SMS messages from banks and financial institutions to create expense entries.</li>
+    <li><strong>How it works:</strong>
+        <ul>
+            <li>The App scans your SMS inbox <strong>locally on your device</strong>.</li>
+            <li>It uses strict pattern matching (Regex) to identify transaction messages (e.g., "Debited", "Credited", "UPI").</li>
+            <li><strong>Personal SMS messages are ignored</strong> and are never stored in our database.</li>
+        </ul>
+    </li>
+    <li><strong>Data Safety:</strong> Your raw SMS data and the parsed transaction data <strong>never leave your device</strong> to any server owned by the developer.</li>
+</ul>
+
+<h2>2. Internet Permission</h2>
+<p>The App requests internet access strictly for the following limited purposes:</p>
+<ol>
+    <li><strong>Regex Updates:</strong> To fetch updated SMS parsing definitions from the developer's public GitHub repository to support new bank formats.</li>
+    <li><strong>User-Initiated Backup:</strong> To allow you to backup your data to your own Google Drive.</li>
+</ol>
+<p><strong>No background analytics or tracking data is sent to the developer.</strong></p>
+
+<h2>3. Data Storage and Retention</h2>
+<p>All your data is stored in a secure local database on your smartphone. The developer does not operate a backend server. If you uninstall the App without a backup, your data will be permanently deleted.</p>
+
+<h2>4. Contact Us</h2>
+<p>If you have questions about our Privacy Policy, please contact us at the email address provided in the Google Play Store listing.</p>
+
+</body>
+</html>
