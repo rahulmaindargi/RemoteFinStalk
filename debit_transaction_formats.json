@@ -119,6 +119,14 @@
     {
       "type": "debit",
       "regex_Format": "(?i).*Your A/C [[account]] has a debit by transfer of Rs.? [[amount]] on [[date]]. Avl Bal.*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i).*(INR|Rs[.]?)[ ]*[[amount]].*From.*(A/C|acc|account) [[account]].*To [[to]].*On [[date]].*"
+    },
+    {
+      "type": "debit",
+      "regex_Format": "(?i).*(INR|Rs[.]?)[ ]*[[amount]].* debited from [[account]] (payments? )?(bank )?a/c.*"
     }
   ]
 }
