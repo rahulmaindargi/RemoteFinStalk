@@ -19,7 +19,7 @@ To function as an automated expense tracker, the App requests the `READ_SMS` per
 
 ### 2. Internet Permission
 The App requests internet access (`android.permission.INTERNET`) strictly for the following limited purposes:
-1.  **Regex Updates:** To fetch updated SMS parsing definitions from the developer's public GitHub repository (`rahulmaindargi/RemoteFinStalk`). This ensures the app can recognize new bank SMS formats without a full app update.
+1.  **Regex Updates:** To fetch updated SMS parsing definitions from the Firebase remote config to support new bank formats.
 2.  **User-Initiated Backup:** To allow you to backup your data to your own **Google Drive**. This action is manually triggered by you.
 
 **No background analytics or tracking data is sent to the developer.**
