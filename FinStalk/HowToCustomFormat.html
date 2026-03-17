@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Create Custom SMS Formats</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #2c3e50;
+        }
+
+        h1 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .tag-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .tag-table th,
+        .tag-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .tag-table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        .tag {
+            background-color: #e8f4fd;
+            color: #2980b9;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-weight: bold;
+        }
+
+        .example-box {
+            background-color: #fdfefe;
+            border-left: 4px solid #2ecc71;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .example-box.debit {
+            border-left-color: #e74c3c;
+        }
+
+        .example-box.credit {
+            border-left-color: #2ecc71;
+        }
+
+        .code-block {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            word-break: break-all;
+            margin: 10px 0;
+        }
+
+        .highlight {
+            color: #f1c40f;
+            font-weight: bold;
+        }
+
+        .wildcard-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            color: #856404;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Creating Custom SMS Formats 🛠️</h1>
+        <p>Banks frequently change how they write their SMS alerts, which can sometimes cause the app to miss a
+            transaction. With the <strong>Custom Formats</strong> feature, you can teach the app exactly how to read
+            your bank's specific messages!</p>
+
+        <h2>1. The Magic Tags</h2>
+        <p>To create a format, you just take a real SMS from your bank and replace the changing details (like the amount
+            or the date) with our special "Magic Tags".</p>
+
+        <table class="tag-table">
+            <tr>
+                <th>Tag</th>
+                <th>What it replaces in the SMS</th>
+                <th>Example in SMS</th>
+            </tr>
+            <tr>
+                <td><span class="tag">[[amount]]</span></td>
+                <td>The transaction amount</td>
+                <td>1047.00</td>
+            </tr>
+            <tr>
+                <td><span class="tag">[[account]]</span></td>
+                <td>Your account or card number</td>
+                <td>XX7007 <em>or</em> 1540</td>
+            </tr>
+            <tr>
+                <td><span class="tag">[[date]]</span></td>
+                <td>The date of the transaction</td>
+                <td>26-Aug-24 <em>or</em> 2023-01-06</td>
+            </tr>
+            <tr>
+                <td><span class="tag">[[time]]</span></td>
+                <td>The time of the transaction (if present)</td>
+                <td>09:50:52 <em>or</em> 14:29:37</td>
+            </tr>
+            <tr>
+                <td><span class="tag">[[to]]</span></td>
+                <td>The merchant, person, or UPI ID you paid</td>
+                <td>JIO PLATFORMS <em>or</em> Amazon Pay</td>
+            </tr>
+        </table>
+
+        <div class="wildcard-box">
+            <h3>🌟 The Wildcard: .*</h3>
+            <p>If a bank adds random text at the <strong>beginning</strong> or in the <strong>middle</strong> of a
+                message that you want to ignore, you can use a dot followed by a star <strong>.*</strong> to tell the
+                app: <em>"Ignore whatever text comes here."</em></p>
+            <p><strong>Note on the end of messages:</strong> You do <em>not</em> need to type <code>.*</code> at the
+                very end of your format! The app automatically ignores anything that comes after the <strong>very last
+                    character you type</strong>.</p>
+            <p>For example, if you type: <code>Spent [[amount]] from [[account]] to [[to]]. Avl</code><br>
+                The app will match everything exactly up to the word <strong>Avl</strong>, and then automatically ignore
+                the rest of the message for you.</p>
+        </div>
+
+        <h2>2. Step-by-Step Examples</h2>
+
+        <div class="example-box debit">
+            <h3>Example 1: A Standard Debit (Money Spent)</h3>
+            <p><strong>Original Bank SMS:</strong></p>
+            <div class="code-block">HDFC Bank: Rs 1180.00 debited from a/c **7380 on 07-01-23 to VPA
+                shailesh.saraf@okicici(UPI Ref No 300771677571). Not you? Call 18002586161</div>
+
+            <p><strong>How you write the Custom Format:</strong></p>
+            <ul>
+                <li>Replace <code>1180.00</code> with <span class="tag">[[amount]]</span></li>
+                <li>Replace <code>**7380</code> with <span class="tag">[[account]]</span></li>
+                <li>Replace <code>07-01-23</code> with <span class="tag">[[date]]</span></li>
+                <li>Replace <code>shailesh.saraf@okicici</code> with <span class="tag">[[to]]</span></li>
+                <li>Use <strong>.*</strong> at the beginning to ignore the bank name prefix.</li>
+            </ul>
+
+            <p><strong>Final Custom Format:</strong></p>
+            <div class="code-block">.* Rs <span class="highlight">[[amount]]</span> debited from a/c <span
+                    class="highlight">[[account]]</span> on <span class="highlight">[[date]]</span> to VPA <span
+                    class="highlight">[[to]]</span></div>
+        </div>
+
+        <div class="example-box credit">
+            <h3>Example 2: A Standard Credit (Money Received)</h3>
+            <p><strong>Original Bank SMS:</strong></p>
+            <div class="code-block">Dear Customer, Payment of INR 45674.30 has been received towards your ICICI Bank
+                Credit Card XX0006 on 22-FEB-23 through UPI. Thank you.</div>
+
+            <p><strong>How you write the Custom Format:</strong></p>
+            <div class="code-block">.* Payment of INR <span class="highlight">[[amount]]</span> has been received
+                towards your ICICI Bank Credit Card <span class="highlight">[[account]]</span> on <span
+                    class="highlight">[[date]]</span></div>
+        </div>
+
+        <div class="example-box debit">
+            <h3>Example 3: Short/Complex Formats</h3>
+            <p><strong>Original Bank SMS:</strong></p>
+            <div class="code-block">Rs. 304.00 debited from Airtel Payments Bank a/c Txn ID 638680169807 Call 180023400
+                for help</div>
+
+            <p><strong>How you write the Custom Format:</strong></p>
+            <p><em>Notice how this SMS doesn't have a date or account number? Just map the amount and the app ignores
+                    the rest!</em></p>
+            <div class="code-block">Rs. <span class="highlight">[[amount]]</span> debited from Airtel Payments Bank a/c
+            </div>
+        </div>
+
+        <h2>3. Important Tips for Success</h2>
+        <ul>
+            <li><strong>Spacing matters:</strong> Ensure the spaces between your words match the SMS exactly.</li>
+            <li><strong>Keep it simple:</strong> You do not need to capture every single word. Focus on the sentence
+                that contains the amount, date, and account.</li>
+            <li><strong>Experiment!</strong> If a format doesn't work the first time, check your spelling and try
+                tweaking where you place the <code>.*</code> wildcard. Alternatively, you can always report the SMS
+                using the app's "Report Missing Transactions" feature, and I will add official support for it within
+                24-48 hours!</li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>
